@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f0f12;
+    color: #e0e0e0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(45deg, #0f0f12 30%, #1a1a2e 100%);
+}
+
+.hero h1 span {
+    color: #8a2be2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #b0b0b0;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 25px;
+    background: #8a2be2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6a1bbd;
+    transform: translateY(-3px);
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #8a2be2;
+}
+
+/* Squad Grid */
+.squad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.member {
+    background: #1e1e26;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.member:hover {
+    border-color: #8a2be2;
+    color: #fff;
+}
+
+/* Footer & Insta */
+footer {
+    padding: 60px 20px;
+    background: #0a0a0c;
+    text-align: center;
+}
+
+.insta-link {
+    font-size: 1.5rem;
+    color: #ff4081;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #555;
+}
