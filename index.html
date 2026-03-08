@@ -3,45 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah | C Programmer</title>
+    <title>Abdullah ibn Thajudheen | C Programmer</title>
+    <meta name="description" content="Portfolio of Abdullah ibn Thajudheen, a basic C programmer passionate about logic building and problem-solving.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span>Abdullah ibn Thajudheen</span></h1>
-            <p>Aspiring C Programmer | Problem Solver | Tech Enthusiast</p>
-            <a href="#contact" class="btn">Get In Touch</a>
-        </div>
+    <header class="glass-header">
+        <nav>
+            <div class="logo">Abdullah<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="ph ph-list"></i>
+            </div>
+        </nav>
     </header>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I am a passionate beginner in the world of programming, currently mastering the fundamentals of **C**. I love diving into logic, memory management, and building the building blocks of software.</p>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content hidden">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="gradient-text">Abdullah ibn Thajudheen</h1>
+                <h2 class="role">
+                    <i class="ph ph-terminal-window"></i> Basic C Programmer
+                </h2>
+                <p class="bio-short">Exploring the foundations of software from the ground up, one line of C at a time.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="https://instagram.com/Abd_u7o" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Let's Connect</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="squad" class="section">
-        <h2>The Squad</h2>
-        <div class="squad-grid">
-            <div class="member">Emarin</div>
-            <div class="member">Mufassil</div>
-            <div class="member">Adhidev</div>
-            <div class="member">Aarav</div>
-            <div class="member">Joseph</div>
-            <div class="member">Wariz</div>
-            <div class="member">Shibly</div>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title hidden">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text glass-card hidden">
+                        <p>Hello! I am Abdullah, a passionate learner diving deeply into the world of C programming. While many chase the latest frameworks, I believe in understanding the core logic and memory manipulation that powers modern computing.</p>
+                        <p>My journey is focused on algorithms, data structures, and writing efficient, clean code. I enjoy breaking down complex problems and mapping out logical solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title hidden">My Skills</h2>
+                <div class="skills-list">
+                    <div class="skill-item glass-card hidden" style="--delay: 0.1s">
+                        <i class="ph ph-brackets-curly skill-icon-small"></i>
+                        <div class="skill-details">
+                            <h3>C Programming</h3>
+                            <p>Pointers, memory management, and core syntax.</p>
+                        </div>
+                    </div>
+                    <div class="skill-item glass-card hidden" style="--delay: 0.2s">
+                        <i class="ph ph-tree-structure skill-icon-small"></i>
+                        <div class="skill-details">
+                            <h3>Data Structures</h3>
+                            <p>Arrays, Linked Lists, Stacks, and basics.</p>
+                        </div>
+                    </div>
+                    <div class="skill-item glass-card hidden" style="--delay: 0.3s">
+                        <i class="ph ph-brain skill-icon-small"></i>
+                        <div class="skill-details">
+                            <h3>Logic Building</h3>
+                            <p>Flowcharts, algorithms, and analytical problem solving.</p>
+                        </div>
+                    </div>
+                    <div class="skill-item glass-card hidden" style="--delay: 0.4s">
+                        <i class="ph ph-bug skill-icon-small"></i>
+                        <div class="skill-details">
+                            <h3>Debugging</h3>
+                            <p>Identifying logic flaws and memory leaks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title hidden">Terminal Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card glass-card hidden" style="--delay: 0.1s">
+                        <div class="project-header">
+                            <i class="ph ph-calculator"></i>
+                            <h3>CLI Calculator</h3>
+                        </div>
+                        <p>A functional calculator built entirely in C running in the terminal, handling order of operations.</p>
+                        <div class="tags">
+                            <span>C</span>
+                            <span>Logic</span>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card hidden" style="--delay: 0.2s">
+                        <div class="project-header">
+                            <i class="ph ph-list-numbers"></i>
+                            <h3>Sorting Visualizer</h3>
+                        </div>
+                        <p>Terminal-based text representation of various sorting algorithms like Bubble and Insertion sort.</p>
+                        <div class="tags">
+                            <span>Algorithms</span>
+                            <span>Arrays</span>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card hidden" style="--delay: 0.3s">
+                        <div class="project-header">
+                            <i class="ph ph-game-controller"></i>
+                            <h3>Logic Game</h3>
+                        </div>
+                        <p>A text-based adventure or logic puzzle game showcasing state management in C.</p>
+                        <div class="tags">
+                            <span>Game Loop</span>
+                            <span>State</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container glass-card contact-card hidden">
+                <h2>Let's Build Something</h2>
+                <p>I'm always open to discussing new projects, logical challenges, or just geeking out about programming.</p>
+                <a href="https://instagram.com/Abd_u7o" target="_blank" rel="noopener noreferrer" class="btn btn-primary contact-btn">
+                    <i class="ph-fill ph-instagram-logo"></i> @Abd_u7o on Instagram
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Abdullah ibn Thajudheen. All rights reserved.</p>
+            <div class="socials">
+                <a href="https://instagram.com/Abd_u7o" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            </div>
         </div>
-    </section>
-
-    <footer id="contact">
-        <h2>Connect With Me</h2>
-        <p>Let's talk about code or just hang out!</p>
-        <a href="https://www.instagram.com/Abd_u7o" target="_blank" class="insta-link">
-            <i class="fab fa-instagram"></i> @Abd_u7o
-        </a>
-        <p class="copyright">&copy; 2026 Abdullah ibn Thajudheen</p>
     </footer>
 
     <script src="script.js"></script>
